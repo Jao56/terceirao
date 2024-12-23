@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte-padrao: "Montserrat", serif;
+    --cor-primaria: #100A1E;
+    --cor-secundaria: #7F00FF;
+    --cor-fonte: white;
+    --background: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px 0;
+    font-family: var(--fonte-padrao);
+    font-size: 14px;
+}
+
+.cabecalho_texto{
+    color: var(--cor-fonte);
+}
+
+.cabecalho_logo{
+    width: 4.5em;
+}
+
+.turma{
+    width: 100%;
+}
+
+.guia{
+    color: var(--cor-fonte);
+    font-family: var(--fonte-padrao);
+}
+.guia_fundo{
+    background-color: var(--cor-primaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.guia_botoes{
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    text-decoration: none;
+    color: var(--cor-fonte);
+    padding: 15px;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 5px;
+    width: 60%;
+    text-align: center;
+    &:hover{
+        background-color: var(--cor-secundaria);
+    }
+}
+
+.custom-table {
+    width: 75%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.custom-table td {
+    border: 2px solid #7F00FF;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-padrao);
+}
+
+.dispesas {
+    width: 75%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: var(--cor-fonte);
+    font-family: var(--fonte-padrao);
+}
+
+.dispesas td {
+    border: 2px solid #7F00FF;
+    padding: 10px;
+    text-align: center;
+    color: var(--background);
+    font-family: var(--fonte-padrao);
+    font-weight: 500;
+}
+
+.dispesas th {
+    border: 2px solid #7F00FF;
+    padding: 10px;
+    text-align: center;
+    color: var(--cor-fonte);
+    font-size: 1.2em;
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-padrao);
+}
